@@ -1,0 +1,647 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS 2D and 3D Transformations</title>
+
+
+    <style>
+
+        /* =====================================================
+           BASIC PAGE DESIGN
+           ===================================================== */
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #5b4bdb;
+            margin-top: 40px;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           COMMON TRANSFORM BOX
+           ===================================================== */
+
+        .transform-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .example {
+            width: 180px;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 30px auto;
+
+            background: #6757df;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+
+            transition: 0.5s;
+        }
+
+
+        /* =====================================================
+           1. ORIGINAL
+           ===================================================== */
+
+        .original {
+            transform: none;
+        }
+
+
+        /* =====================================================
+           2. ROTATE
+           ===================================================== */
+
+        .rotate {
+            transform: rotate(15deg);
+        }
+
+
+        /* =====================================================
+           3. SCALE
+           ===================================================== */
+
+        .scale {
+            transform: scale(1.2);
+        }
+
+
+        /* =====================================================
+           4. TRANSLATE
+           ===================================================== */
+
+        .translate {
+            transform: translate(50px, 20px);
+        }
+
+
+        /* =====================================================
+           5. SKEW
+           ===================================================== */
+
+        .skew {
+            transform: skew(10deg, 0deg);
+        }
+
+
+        /* =====================================================
+           6. COMBINED TRANSFORM
+           ===================================================== */
+
+        .combined {
+            transform:
+                rotate(15deg)
+                scale(1.1)
+                translate(20px, 10px);
+        }
+
+
+        /* =====================================================
+           7. TRANSLATE X
+           ===================================================== */
+
+        .translate-x {
+            transform: translateX(40px);
+        }
+
+
+        /* =====================================================
+           8. TRANSLATE Y
+           ===================================================== */
+
+        .translate-y {
+            transform: translateY(30px);
+        }
+
+
+        /* =====================================================
+           9. ROTATE X
+           3D TRANSFORMATION
+           ===================================================== */
+
+        .rotate-x {
+            transform: perspective(500px) rotateX(45deg);
+        }
+
+
+        /* =====================================================
+           10. ROTATE Y
+           3D TRANSFORMATION
+           ===================================================== */
+
+        .rotate-y {
+            transform: perspective(500px) rotateY(45deg);
+        }
+
+
+        /* =====================================================
+           11. ROTATE Z
+           ===================================================== */
+
+        .rotate-z {
+            transform: perspective(500px) rotateZ(45deg);
+        }
+
+
+        /* =====================================================
+           12. TRANSLATE Z
+           ===================================================== */
+
+        .translate-z {
+            transform:
+                perspective(500px)
+                translateZ(50px);
+        }
+
+
+        /* =====================================================
+           13. SCALE 3D
+           ===================================================== */
+
+        .scale-3d {
+            transform:
+                perspective(500px)
+                scale3d(1.2, 1.2, 1.2);
+        }
+
+
+        /* =====================================================
+           14. PERSPECTIVE
+           ===================================================== */
+
+        .perspective {
+            transform:
+                perspective(200px)
+                rotateY(45deg);
+        }
+
+
+        /* =====================================================
+           15. TRANSFORM ORIGIN
+           ===================================================== */
+
+        .origin {
+            transform-origin: top left;
+            transform: rotate(25deg);
+        }
+
+
+        /* =====================================================
+           16. TRANSFORM STYLE
+           ===================================================== */
+
+        .parent-3d {
+            width: 150px;
+            height: 150px;
+
+            margin: 30px auto;
+
+            transform-style: preserve-3d;
+
+            transform:
+                perspective(500px)
+                rotateY(25deg);
+        }
+
+        .child-3d {
+            width: 100px;
+            height: 100px;
+
+            background: orange;
+
+            transform:
+                translateZ(50px);
+        }
+
+
+        /* =====================================================
+           17. BACKFACE VISIBILITY
+           ===================================================== */
+
+        .backface {
+            transform:
+                perspective(500px)
+                rotateY(180deg);
+
+            backface-visibility: hidden;
+        }
+
+
+        /* =====================================================
+           HOVER TRANSFORMATION
+           ===================================================== */
+
+        .hover-box:hover {
+            transform:
+                rotate(10deg)
+                scale(1.15);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <h1>CSS 2D and 3D Transformations</h1>
+
+
+    <!-- =====================================================
+         2D TRANSFORMATIONS
+         ===================================================== -->
+
+    <h2>2D Transformations</h2>
+
+    <p class="description">
+        2D transformations change an element using the
+        X and Y axes. They include rotate, scale,
+        translate and skew.
+    </p>
+
+
+    <div class="transform-container">
+
+
+        <!-- ORIGINAL -->
+
+        <div class="example">
+
+            <div class="box original">
+                Original
+            </div>
+
+            <strong>transform: none</strong>
+
+            <p>
+                No transformation is applied.
+            </p>
+
+        </div>
+
+
+        <!-- ROTATE -->
+
+        <div class="example">
+
+            <div class="box rotate">
+                Rotate
+            </div>
+
+            <strong>rotate(15deg)</strong>
+
+            <p>
+                Rotates the element by 15 degrees.
+            </p>
+
+        </div>
+
+
+        <!-- SCALE -->
+
+        <div class="example">
+
+            <div class="box scale">
+                Scale
+            </div>
+
+            <strong>scale(1.2)</strong>
+
+            <p>
+                Increases the size of the element.
+            </p>
+
+        </div>
+
+
+        <!-- TRANSLATE -->
+
+        <div class="example">
+
+            <div class="box translate">
+                Translate
+            </div>
+
+            <strong>translate(50px,20px)</strong>
+
+            <p>
+                Moves the element on X and Y axes.
+            </p>
+
+        </div>
+
+
+        <!-- SKEW -->
+
+        <div class="example">
+
+            <div class="box skew">
+                Skew
+            </div>
+
+            <strong>skew(10deg)</strong>
+
+            <p>
+                Slants the element.
+            </p>
+
+        </div>
+
+
+        <!-- COMBINED -->
+
+        <div class="example">
+
+            <div class="box combined">
+                Combined
+            </div>
+
+            <strong>Multiple transforms</strong>
+
+            <p>
+                Applies more than one transformation.
+            </p>
+
+        </div>
+
+
+        <!-- TRANSLATE X -->
+
+        <div class="example">
+
+            <div class="box translate-x">
+                X
+            </div>
+
+            <strong>translateX(40px)</strong>
+
+            <p>
+                Moves the element horizontally.
+            </p>
+
+        </div>
+
+
+        <!-- TRANSLATE Y -->
+
+        <div class="example">
+
+            <div class="box translate-y">
+                Y
+            </div>
+
+            <strong>translateY(30px)</strong>
+
+            <p>
+                Moves the element vertically.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         3D TRANSFORMATIONS
+         ===================================================== -->
+
+    <h2>3D Transformations</h2>
+
+    <p class="description">
+
+        3D transformations work with the X, Y and Z axes.
+        They can create depth and perspective effects.
+
+    </p>
+
+
+    <div class="transform-container">
+
+
+        <!-- ROTATE X -->
+
+        <div class="example">
+
+            <div class="box rotate-x">
+                Rotate X
+            </div>
+
+            <strong>rotateX(45deg)</strong>
+
+            <p>
+                Rotates around the X-axis.
+            </p>
+
+        </div>
+
+
+        <!-- ROTATE Y -->
+
+        <div class="example">
+
+            <div class="box rotate-y">
+                Rotate Y
+            </div>
+
+            <strong>rotateY(45deg)</strong>
+
+            <p>
+                Rotates around the Y-axis.
+            </p>
+
+        </div>
+
+
+        <!-- ROTATE Z -->
+
+        <div class="example">
+
+            <div class="box rotate-z">
+                Rotate Z
+            </div>
+
+            <strong>rotateZ(45deg)</strong>
+
+            <p>
+                Rotates around the Z-axis.
+            </p>
+
+        </div>
+
+
+        <!-- TRANSLATE Z -->
+
+        <div class="example">
+
+            <div class="box translate-z">
+                Translate Z
+            </div>
+
+            <strong>translateZ(50px)</strong>
+
+            <p>
+                Moves the element along the Z-axis.
+            </p>
+
+        </div>
+
+
+        <!-- SCALE 3D -->
+
+        <div class="example">
+
+            <div class="box scale-3d">
+                Scale 3D
+            </div>
+
+            <strong>scale3d()</strong>
+
+            <p>
+                Changes size in 3D space.
+            </p>
+
+        </div>
+
+
+        <!-- PERSPECTIVE -->
+
+        <div class="example">
+
+            <div class="box perspective">
+                Perspective
+            </div>
+
+            <strong>perspective()</strong>
+
+            <p>
+                Creates a depth effect.
+            </p>
+
+        </div>
+
+
+        <!-- TRANSFORM ORIGIN -->
+
+        <div class="example">
+
+            <div class="box origin">
+                Origin
+            </div>
+
+            <strong>transform-origin</strong>
+
+            <p>
+                Sets the transformation point.
+            </p>
+
+        </div>
+
+
+        <!-- BACKFACE -->
+
+        <div class="example">
+
+            <div class="box backface">
+                Backface
+            </div>
+
+            <strong>backface-visibility</strong>
+
+            <p>
+                Controls visibility of the back side.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TRANSFORM STYLE
+         ===================================================== -->
+
+    <h2>transform-style: preserve-3d</h2>
+
+    <p class="description">
+
+        The <strong>preserve-3d</strong> property allows
+        child elements to maintain their 3D position.
+
+    </p>
+
+
+    <div class="parent-3d">
+
+        <div class="child-3d">
+            3D Child
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HOVER
+         ===================================================== -->
+
+    <h2>Hover Transformation</h2>
+
+    <p class="description">
+
+        Move your mouse over the box to see the transformation.
+
+    </p>
+
+
+    <div
+        class="box hover-box">
+
+        Hover Me
+
+    </div>
+
+
+</body>
+
+</html>
+```
