@@ -1,1 +1,675 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact Now</title><link rel="stylesheet" href="style.css"></head><body><div class="topbar">Grey background area</div><main class="contact-card"><aside><p class="eyebrow">GET IN TOUCH</p><h1>Contact Now</h1><p>Have a question? Send us a message and we will get back to you.</p><div class="contact-info"><p>☎ &nbsp; +92 40 4305001</p><p>✉ &nbsp; info@example.com</p><p>⌖ &nbsp; Sahiwal, Pakistan</p></div></aside><section><div class="social"><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://twitter.com/" aria-label="Twitter">t</a><a href="https://www.instagram.com/" aria-label="Instagram">◎</a><a href="https://www.google.com/" aria-label="Google">G+</a></div><form><label>Name<input required placeholder="Your name"></label><label>Email<input type="email" required placeholder="Your email"></label><label>Department<select required><option value="">Select a Department</option><option>Computer Science</option><option>Admissions</option><option>Student Affairs</option><option>Other</option></select></label><label>Message<textarea rows="4" required placeholder="Write your message..."></textarea></label><button type="submit">Send Message</button></form></section></main><footer>Grey background area</footer><script>document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();alert('Thank you. This demonstration form is not connected to a mail server.');});</script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova | Digital Solutions & AI</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #10233f;
+            --blue: #1677c8;
+            --light-blue: #eaf4fc;
+            --background: #f6f8fb;
+            --text: #263449;
+            --muted: #68778b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* TASK 1: FLEXBOX NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 8%;
+            background: var(--navy);
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #64c5ff;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        .nav-links a {
+            color: #e1e9f3;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #64c5ff;
+        }
+
+        .nav-links .contact-link {
+            background: var(--blue);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+
+        /* TASK 1: FLEXBOX HERO */
+        .hero {
+            min-height: 490px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 65px 20px;
+            color: white;
+            background:
+                linear-gradient(
+                    rgba(10, 28, 52, 0.86),
+                    rgba(10, 28, 52, 0.88)
+                ),
+                url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80")
+                center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .hero-label {
+            color: #8bd3ff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 55px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 18px 0;
+        }
+
+        .hero h1 span {
+            color: #64c5ff;
+        }
+
+        .hero p {
+            color: #d4dfec;
+            font-size: 16px;
+            max-width: 620px;
+            margin: 0 auto 28px;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 6px;
+            background: #1685d1;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .primary-btn:hover {
+            background: #0866a9;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* SECTION HEADINGS */
+        .section-heading {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 38px;
+        }
+
+        .section-heading .eyebrow {
+            color: var(--blue);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: clamp(27px, 4vw, 36px);
+            font-weight: 800;
+            margin: 10px 0;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* TASK 2: CSS GRID SERVICES */
+        .services {
+            padding: 75px 8%;
+            background: var(--background);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e5eaf1;
+            border-radius: 10px;
+            padding: 28px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(16, 35, 63, 0.08);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9px;
+            background: var(--light-blue);
+            color: var(--blue);
+            font-size: 21px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        /* TASK 4: BOOTSTRAP TEAM SECTION */
+        .team-section {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        .team-card {
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid #e4eaf1;
+            border-radius: 10px;
+            background: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 30px rgba(16, 35, 63, 0.12) !important;
+        }
+
+        /* Consistent profile image dimensions */
+        .team-photo {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 7px;
+            background: #eaf0f6;
+        }
+
+        .team-card .card-body {
+            padding: 22px 12px 12px;
+        }
+
+        .team-card .card-title {
+            color: var(--navy);
+            font-size: 19px;
+            font-weight: 800;
+            margin-bottom: 7px;
+        }
+
+        .team-role {
+            color: var(--blue);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 13px;
+        }
+
+        .team-card .card-text {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 0 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--light-blue);
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            background: var(--blue);
+            color: white;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            padding: 55px 20px;
+            background: var(--navy);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: clamp(25px, 4vw, 34px);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .contact-section p {
+            color: #cbd5e1;
+            font-size: 14px;
+            margin-bottom: 23px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #09172b;
+            color: #aab9cc;
+            text-align: center;
+            padding: 22px 15px;
+            font-size: 12px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* TASK 3: MOBILE RESPONSIVENESS */
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                gap: 17px;
+                padding: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .hero {
+                min-height: 430px;
+                padding: 55px 20px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .services {
+                padding: 55px 6%;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 17px;
+            }
+
+            .service-card {
+                padding: 24px;
+            }
+
+            .team-section {
+                padding-top: 55px;
+                padding-bottom: 55px;
+            }
+
+            .team-photo {
+                height: 260px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            nav {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .team-photo {
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TASK 1: NAVIGATION -->
+    <nav>
+        <a href="#home" class="logo">Tech<span>Nova</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact" class="contact-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- TASK 1: HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-label">Technology • Innovation • Growth</span>
+
+            <h1>
+                Building Digital Solutions<br>
+                <span>for a Smarter Future</span>
+            </h1>
+
+            <p>
+                We create modern software, intelligent AI solutions,
+                secure digital systems, and scalable cloud services
+                to solve real-world problems.
+            </p>
+
+            <a href="#services" class="primary-btn">
+                Explore Our Services
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- TASK 2: SERVICES GRID -->
+    <section class="services" id="services">
+        <div class="section-heading">
+            <span class="eyebrow">Our Expertise</span>
+            <h2>Services We Provide</h2>
+            <p>
+                Practical technology solutions designed to improve
+                performance, security, and digital experiences.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h3>Cloud Computing</h3>
+                <p>
+                    Scalable infrastructure, cloud storage, and
+                    reliable services that help applications
+                    remain accessible and efficient.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p>
+                    User-friendly Android and iOS applications
+                    built around responsive interfaces,
+                    usability, and performance.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Machine learning, predictive analytics, and
+                    intelligent automation for data-driven
+                    decisions and smarter applications.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Cybersecurity & Data Engineering</h3>
+                <p>
+                    Data processing, secure system design,
+                    and reliable data pipelines to support
+                    protected digital operations.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TASK 4: BOOTSTRAP TEAM -->
+    <section class="container team-section" id="team">
+
+        <div class="section-heading">
+            <span class="eyebrow">The People Behind the Work</span>
+            <h2>Meet Our Team</h2>
+            <p>
+                A team bringing together software development,
+                design, and artificial intelligence.
+            </p>
+        </div>
+
+        <!-- Bootstrap 12-column grid -->
+        <div class="row g-4">
+
+            <!-- YOUR PROFILE -->
+            <div class="col-12 col-md-4">
+                <div class="card team-card shadow-sm text-center p-3">
+
+                    <img
+                        src="img.png"
+                        class="team-photo"
+                        alt="Muneeb Farid, CEO and AI engineer"
+                    >
+
+                    <div class="card-body">
+                        <h3 class="card-title">Muneeb Farid</h3>
+                        <p class="team-role">CEO & AI Engineer</p>
+
+                        <p class="card-text">
+                            Interested in artificial intelligence,
+                            machine learning, and software development.
+                            Focused on building practical applications
+                            that solve real-world problems.
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/"
+                           aria-label="LinkedIn profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/"
+                           aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TEAM MEMBER 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card team-card shadow-sm text-center p-3">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85"
+                        class="team-photo"
+                        alt="Portrait representing the UI and UX designer"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <h3 class="card-title">Sara Khan</h3>
+                        <p class="team-role">UI/UX Designer</p>
+
+                        <p class="card-text">
+                            Focuses on clean interfaces, visual
+                            consistency, and accessible user
+                            experiences across digital products.
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://dribbble.com/"
+                           aria-label="Design portfolio">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TEAM MEMBER 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card team-card shadow-sm text-center p-3">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=85"
+                        class="team-photo"
+                        alt="Portrait representing the web developer"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <h3 class="card-title">Usman Malik</h3>
+                        <p class="team-role">Web Developer</p>
+
+                        <p class="card-text">
+                            Develops responsive websites and
+                            maintainable web applications using
+                            modern front-end and back-end technologies.
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <h2>Let's Build Something Meaningful</h2>
+        <p>
+            Have a project idea? Let's explore how technology
+            can help turn it into reality.
+        </p>
+        <a href="mailto:YOUR-EMAIL@example.com" class="primary-btn">
+            Get in Touch
+            <i class="fa-solid fa-envelope ms-2"></i>
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="mb-1">
+            <strong>TechNova</strong> | Technology & Digital Innovation
+        </p>
+        <p class="mb-0">
+            &copy; 2026 TechNova. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
