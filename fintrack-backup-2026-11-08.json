@@ -1,0 +1,1033 @@
+{
+  "app": "FinTrack",
+  "version": 1,
+  "exportedAt": "2026-11-08T17:11:42.055Z",
+  "transactions": [
+    {
+      "id": "mw838i210weavy6",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-06-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i21akf8zze",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-06-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i2162u4ef9",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 200.3,
+      "date": "2026-06-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i21mru3nym",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 29.38,
+      "date": "2026-06-09",
+      "note": "Mobile bill"
+    },
+    {
+      "id": "mw838i21knczcsl",
+      "type": "income",
+      "category": "Freelance",
+      "amount": 585.59,
+      "date": "2026-06-15",
+      "note": "Website project"
+    },
+    {
+      "id": "mw838i21s1qzq65",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 20.71,
+      "date": "2026-06-24",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21n0gr19v",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 14.26,
+      "date": "2026-06-15",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21lde2ecw",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 33.35,
+      "date": "2026-06-21",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21hnksijz",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 48.17,
+      "date": "2026-06-01",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i2155vxhbu",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 32.67,
+      "date": "2026-06-08",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21pe4nhqu",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 18.89,
+      "date": "2026-06-18",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21sxs7q20",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 42.47,
+      "date": "2026-06-17",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21qlj9csz",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 28.09,
+      "date": "2026-06-22",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21s4kvpfo",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 52.97,
+      "date": "2026-06-27",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21t8gvgkf",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 15.65,
+      "date": "2026-06-18",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21550y649",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 50.47,
+      "date": "2026-06-21",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i21mnve6o5",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 34.44,
+      "date": "2026-06-12",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i21als2bei",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 25.6,
+      "date": "2026-06-28",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i21917l3bv",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 94.11,
+      "date": "2026-06-28",
+      "note": "Shoes"
+    },
+    {
+      "id": "mw838i2129a4mli",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 92.75,
+      "date": "2026-06-01",
+      "note": "Online order"
+    },
+    {
+      "id": "mw838i21ao6kg1z",
+      "type": "expense",
+      "category": "Entertainment",
+      "amount": 53.85,
+      "date": "2026-06-12",
+      "note": "Cinema tickets"
+    },
+    {
+      "id": "mw838i21dxdmyib",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-07-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i21gnbljyv",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-07-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i21i3gzxnn",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 175.09,
+      "date": "2026-07-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i213jqsu6m",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 33.02,
+      "date": "2026-07-09",
+      "note": "Mobile bill"
+    },
+    {
+      "id": "mw838i21lrdzea1",
+      "type": "income",
+      "category": "Freelance",
+      "amount": 767.55,
+      "date": "2026-07-15",
+      "note": "App bug fixes"
+    },
+    {
+      "id": "mw838i211mi3y9i",
+      "type": "income",
+      "category": "Investments",
+      "amount": 80.84,
+      "date": "2026-07-20",
+      "note": "Dividend payout"
+    },
+    {
+      "id": "mw838i213ljrhfq",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 40.31,
+      "date": "2026-07-08",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21ayoos94",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 44.65,
+      "date": "2026-07-08",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21uyhe48z",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 30.82,
+      "date": "2026-07-26",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i2106oji1i",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 15.18,
+      "date": "2026-07-12",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21ueexvpv",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 52.55,
+      "date": "2026-07-16",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21uiw6twi",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 69.8,
+      "date": "2026-07-16",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21fre7ag0",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 34.6,
+      "date": "2026-07-01",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21adn0g5y",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 52.15,
+      "date": "2026-07-03",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i217o1rtmm",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 29.84,
+      "date": "2026-07-06",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21oi9rp5p",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 33.99,
+      "date": "2026-07-06",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21q3wq6x9",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 20.76,
+      "date": "2026-07-19",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i21ptftj25",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 10.03,
+      "date": "2026-07-08",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21siuv76d",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 21.69,
+      "date": "2026-07-23",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i21uom3hrs",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 34.75,
+      "date": "2026-07-26",
+      "note": "Online order"
+    },
+    {
+      "id": "mw838i21d05vcub",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 87.25,
+      "date": "2026-07-14",
+      "note": "Clothes"
+    },
+    {
+      "id": "mw838i21hy66kc8",
+      "type": "expense",
+      "category": "Entertainment",
+      "amount": 16.14,
+      "date": "2026-07-12",
+      "note": "Streaming subscription"
+    },
+    {
+      "id": "mw838i21k1e6peo",
+      "type": "expense",
+      "category": "Health",
+      "amount": 98.19,
+      "date": "2026-07-18",
+      "note": "Pharmacy"
+    },
+    {
+      "id": "mw838i21ao38njh",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-08-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i21mf370kt",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-08-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i21fpl220r",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 169.17,
+      "date": "2026-08-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i21dweldzv",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 33.91,
+      "date": "2026-08-09",
+      "note": "Mobile bill"
+    },
+    {
+      "id": "mw838i21d11uhwg",
+      "type": "income",
+      "category": "Freelance",
+      "amount": 440.58,
+      "date": "2026-08-15",
+      "note": "App bug fixes"
+    },
+    {
+      "id": "mw838i21ns7ebnx",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 29.62,
+      "date": "2026-08-03",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21c15chef",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 27.9,
+      "date": "2026-08-24",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21b8wdazi",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 43.14,
+      "date": "2026-08-06",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21cueg2et",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 28.58,
+      "date": "2026-08-10",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i219thpvdf",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 58.64,
+      "date": "2026-08-10",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21h54ztfy",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 56.55,
+      "date": "2026-08-04",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21xoy05jh",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 66.7,
+      "date": "2026-08-01",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21okehg8v",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 62.66,
+      "date": "2026-08-18",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i215mt42sm",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 41.85,
+      "date": "2026-08-23",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21k0s6sco",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 44.42,
+      "date": "2026-08-23",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i21j0zswcj",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 31.53,
+      "date": "2026-08-03",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i21b2n1zdk",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 10.21,
+      "date": "2026-08-16",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i217hw0cfa",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 23.69,
+      "date": "2026-08-03",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21n8vck7t",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 43.04,
+      "date": "2026-08-14",
+      "note": "Home decor"
+    },
+    {
+      "id": "mw838i21qkycxkb",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 169.8,
+      "date": "2026-08-05",
+      "note": "Clothes"
+    },
+    {
+      "id": "mw838i213tcist2",
+      "type": "expense",
+      "category": "Entertainment",
+      "amount": 59.29,
+      "date": "2026-08-12",
+      "note": "Streaming subscription"
+    },
+    {
+      "id": "mw838i21lr76g1j",
+      "type": "expense",
+      "category": "Travel",
+      "amount": 640,
+      "date": "2026-08-22",
+      "note": "Weekend trip"
+    },
+    {
+      "id": "mw838i21o8f5jvf",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-09-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i2115q9q5p",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-09-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i21i8mq5v1",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 196.79,
+      "date": "2026-09-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i21wuop97i",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 28.16,
+      "date": "2026-09-09",
+      "note": "Mobile bill"
+    },
+    {
+      "id": "mw838i21ow51tnu",
+      "type": "income",
+      "category": "Freelance",
+      "amount": 888.74,
+      "date": "2026-09-15",
+      "note": "Logo design"
+    },
+    {
+      "id": "mw838i21yjqnmdh",
+      "type": "income",
+      "category": "Investments",
+      "amount": 69.53,
+      "date": "2026-09-20",
+      "note": "Dividend payout"
+    },
+    {
+      "id": "mw838i2180jz18d",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 33.8,
+      "date": "2026-09-09",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i214781tsb",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 69.83,
+      "date": "2026-09-12",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21s3fwc3p",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 11.99,
+      "date": "2026-09-06",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21sacgjqp",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 40.64,
+      "date": "2026-09-06",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21lxffyet",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 56.98,
+      "date": "2026-09-16",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21t2hmy7o",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 22.21,
+      "date": "2026-09-20",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21nrd359e",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 52.25,
+      "date": "2026-09-09",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i216ckwba6",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 68.37,
+      "date": "2026-09-27",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21kuksc4n",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 32.09,
+      "date": "2026-09-14",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i21srfl8zi",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 51.82,
+      "date": "2026-09-14",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21nq8lvvh",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 52.74,
+      "date": "2026-09-16",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i21bvy96cw",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 14.59,
+      "date": "2026-09-25",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i213ytfq3k",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 26.18,
+      "date": "2026-09-17",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21smeu52s",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 72.24,
+      "date": "2026-09-17",
+      "note": "Online order"
+    },
+    {
+      "id": "mw838i21mx128af",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 144.99,
+      "date": "2026-09-20",
+      "note": "Shoes"
+    },
+    {
+      "id": "mw838i21tvzn5qu",
+      "type": "expense",
+      "category": "Entertainment",
+      "amount": 26.76,
+      "date": "2026-09-12",
+      "note": "Concert"
+    },
+    {
+      "id": "mw838i2128l261r",
+      "type": "expense",
+      "category": "Education",
+      "amount": 89,
+      "date": "2026-09-10",
+      "note": "Online course"
+    },
+    {
+      "id": "mw838i21gjpto4w",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-10-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i21ivebdhg",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-10-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i21hfwq7hc",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 181.66,
+      "date": "2026-10-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i218ixgyj7",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 41.95,
+      "date": "2026-10-09",
+      "note": "Mobile bill"
+    },
+    {
+      "id": "mw838i211knpzlf",
+      "type": "income",
+      "category": "Freelance",
+      "amount": 878.84,
+      "date": "2026-10-15",
+      "note": "Website project"
+    },
+    {
+      "id": "mw838i21y1z4k6p",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 29.45,
+      "date": "2026-10-06",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i21ggqe09d",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 11.06,
+      "date": "2026-10-20",
+      "note": "Coffee"
+    },
+    {
+      "id": "mw838i210qphvs4",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 36.05,
+      "date": "2026-10-25",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21ny2vzb6",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 48.69,
+      "date": "2026-10-25",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i21u8g1a6x",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 32.2,
+      "date": "2026-10-22",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i2166zw56z",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 49.3,
+      "date": "2026-10-08",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i217xy3bt7",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 63.62,
+      "date": "2026-10-28",
+      "note": "Takeaway pizza"
+    },
+    {
+      "id": "mw838i214r8b9d8",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 61.39,
+      "date": "2026-10-24",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21lbman9o",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 24.87,
+      "date": "2026-10-02",
+      "note": "Lunch with team"
+    },
+    {
+      "id": "mw838i212c3plwt",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 51.94,
+      "date": "2026-10-14",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i21co7wqjh",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 45.37,
+      "date": "2026-10-21",
+      "note": "Parking"
+    },
+    {
+      "id": "mw838i21aiz1e68",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 15.38,
+      "date": "2026-10-09",
+      "note": "Metro card"
+    },
+    {
+      "id": "mw838i215z65xee",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 10.86,
+      "date": "2026-10-16",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i213i8pgic",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 131.25,
+      "date": "2026-10-25",
+      "note": "Shoes"
+    },
+    {
+      "id": "mw838i21bcenkgi",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 39.31,
+      "date": "2026-10-16",
+      "note": "Home decor"
+    },
+    {
+      "id": "mw838i21mfxi85i",
+      "type": "expense",
+      "category": "Entertainment",
+      "amount": 19.85,
+      "date": "2026-10-12",
+      "note": "Concert"
+    },
+    {
+      "id": "mw838i21wdi13g3",
+      "type": "expense",
+      "category": "Health",
+      "amount": 55.15,
+      "date": "2026-10-18",
+      "note": "Pharmacy"
+    },
+    {
+      "id": "mw838i216lpacvd",
+      "type": "income",
+      "category": "Salary",
+      "amount": 4500,
+      "date": "2026-11-01",
+      "note": "Monthly salary"
+    },
+    {
+      "id": "mw838i21j8ciexe",
+      "type": "expense",
+      "category": "Rent & Housing",
+      "amount": 1200,
+      "date": "2026-11-02",
+      "note": "Apartment rent"
+    },
+    {
+      "id": "mw838i214651364",
+      "type": "expense",
+      "category": "Bills & Utilities",
+      "amount": 199.72,
+      "date": "2026-11-05",
+      "note": "Electricity & internet"
+    },
+    {
+      "id": "mw838i2194l4l0c",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 30.48,
+      "date": "2026-11-03",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21wzh8361",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 11.36,
+      "date": "2026-11-05",
+      "note": "Groceries"
+    },
+    {
+      "id": "mw838i21lzjen8q",
+      "type": "expense",
+      "category": "Food & Dining",
+      "amount": 18.95,
+      "date": "2026-11-05",
+      "note": "Dinner out"
+    },
+    {
+      "id": "mw838i21dycvp0y",
+      "type": "expense",
+      "category": "Transport",
+      "amount": 8.56,
+      "date": "2026-11-07",
+      "note": "Fuel"
+    },
+    {
+      "id": "mw838i21i9jsqe3",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 60.99,
+      "date": "2026-11-06",
+      "note": "Online order"
+    },
+    {
+      "id": "mw838i21rgroogl",
+      "type": "expense",
+      "category": "Shopping",
+      "amount": 89.93,
+      "date": "2026-11-08",
+      "note": "Online order"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "mw838i2188otwb2",
+      "category": "Food & Dining",
+      "limit": 450
+    },
+    {
+      "id": "mw838i21axf7h4f",
+      "category": "Shopping",
+      "limit": 250
+    },
+    {
+      "id": "mw838i21z3venxc",
+      "category": "Transport",
+      "limit": 150
+    },
+    {
+      "id": "mw838i21nzdlxeh",
+      "category": "Bills & Utilities",
+      "limit": 260
+    },
+    {
+      "id": "mw838i212a2hd3e",
+      "category": "Entertainment",
+      "limit": 60
+    },
+    {
+      "id": "mw838i21vtu6slh",
+      "category": "Health",
+      "limit": 100
+    }
+  ],
+  "goals": [
+    {
+      "id": "mw838i21sx9i8x1",
+      "name": "Emergency Fund",
+      "icon": "bi-shield-fill-check",
+      "target": 10000,
+      "saved": 6200,
+      "deadline": "2027-07-01",
+      "color": "#6366f1"
+    },
+    {
+      "id": "mw838i21dpw1l49",
+      "name": "New Laptop",
+      "icon": "bi-laptop",
+      "target": 1800,
+      "saved": 1150,
+      "deadline": "2027-02-01",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "mw838i21kmzhl12",
+      "name": "Summer Vacation",
+      "icon": "bi-airplane-fill",
+      "target": 3000,
+      "saved": 800,
+      "deadline": "2027-06-01",
+      "color": "#f59e0b"
+    }
+  ],
+  "settings": {
+    "name": "Friend",
+    "currency": "USD",
+    "theme": "light"
+  }
+}
