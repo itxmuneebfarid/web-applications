@@ -5,671 +5,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TechNova | Digital Solutions & AI</title>
+    <title> Web Design</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <style>
-        :root {
-            --navy: #10233f;
-            --blue: #1677c8;
-            --light-blue: #eaf4fc;
-            --background: #f6f8fb;
-            --text: #263449;
-            --muted: #68778b;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', Arial, sans-serif;
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        /* TASK 1: FLEXBOX NAVIGATION */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 17px 8%;
-            background: var(--navy);
-            color: white;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 800;
-            color: white;
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: #64c5ff;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            list-style: none;
-            margin-bottom: 0;
-        }
-
-        .nav-links a {
-            color: #e1e9f3;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: #64c5ff;
-        }
-
-        .nav-links .contact-link {
-            background: var(--blue);
-            color: white;
-            padding: 10px 16px;
-            border-radius: 6px;
-        }
-
-        /* TASK 1: FLEXBOX HERO */
-        .hero {
-            min-height: 490px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 65px 20px;
-            color: white;
-            background:
-                linear-gradient(
-                    rgba(10, 28, 52, 0.86),
-                    rgba(10, 28, 52, 0.88)
-                ),
-                url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80")
-                center/cover no-repeat;
-        }
-
-        .hero-content {
-            max-width: 760px;
-        }
-
-        .hero-label {
-            color: #8bd3ff;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .hero h1 {
-            font-size: clamp(34px, 5vw, 55px);
-            font-weight: 800;
-            line-height: 1.2;
-            margin: 18px 0;
-        }
-
-        .hero h1 span {
-            color: #64c5ff;
-        }
-
-        .hero p {
-            color: #d4dfec;
-            font-size: 16px;
-            max-width: 620px;
-            margin: 0 auto 28px;
-        }
-
-        .primary-btn {
-            display: inline-block;
-            padding: 13px 23px;
-            border-radius: 6px;
-            background: #1685d1;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background 0.2s, transform 0.2s;
-        }
-
-        .primary-btn:hover {
-            background: #0866a9;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        /* SECTION HEADINGS */
-        .section-heading {
-            text-align: center;
-            max-width: 680px;
-            margin: 0 auto 38px;
-        }
-
-        .section-heading .eyebrow {
-            color: var(--blue);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
-        }
-
-        .section-heading h2 {
-            color: var(--navy);
-            font-size: clamp(27px, 4vw, 36px);
-            font-weight: 800;
-            margin: 10px 0;
-        }
-
-        .section-heading p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        /* TASK 2: CSS GRID SERVICES */
-        .services {
-            padding: 75px 8%;
-            background: var(--background);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .service-card {
-            background: white;
-            border: 1px solid #e5eaf1;
-            border-radius: 10px;
-            padding: 28px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 28px rgba(16, 35, 63, 0.08);
-        }
-
-        .service-icon {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 9px;
-            background: var(--light-blue);
-            color: var(--blue);
-            font-size: 21px;
-            margin-bottom: 18px;
-        }
-
-        .service-card h3 {
-            color: var(--navy);
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .service-card p {
-            color: var(--muted);
-            font-size: 13px;
-            margin-bottom: 0;
-        }
-
-        /* TASK 4: BOOTSTRAP TEAM SECTION */
-        .team-section {
-            padding-top: 75px;
-            padding-bottom: 75px;
-        }
-
-        .team-card {
-            height: 100%;
-            overflow: hidden;
-            border: 1px solid #e4eaf1;
-            border-radius: 10px;
-            background: white;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .team-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 14px 30px rgba(16, 35, 63, 0.12) !important;
-        }
-
-        /* Consistent profile image dimensions */
-        .team-photo {
-            display: block;
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            object-position: center 25%;
-            border-radius: 7px;
-            background: #eaf0f6;
-        }
-
-        .team-card .card-body {
-            padding: 22px 12px 12px;
-        }
-
-        .team-card .card-title {
-            color: var(--navy);
-            font-size: 19px;
-            font-weight: 800;
-            margin-bottom: 7px;
-        }
-
-        .team-role {
-            color: var(--blue);
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 13px;
-        }
-
-        .team-card .card-text {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 1.8;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding: 0 0 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: var(--light-blue);
-            color: var(--blue);
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            background: var(--blue);
-            color: white;
-        }
-
-        /* CONTACT */
-        .contact-section {
-            padding: 55px 20px;
-            background: var(--navy);
-            color: white;
-            text-align: center;
-        }
-
-        .contact-section h2 {
-            font-size: clamp(25px, 4vw, 34px);
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
-
-        .contact-section p {
-            color: #cbd5e1;
-            font-size: 14px;
-            margin-bottom: 23px;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #09172b;
-            color: #aab9cc;
-            text-align: center;
-            padding: 22px 15px;
-            font-size: 12px;
-        }
-
-        footer strong {
-            color: white;
-        }
-
-        /* TASK 3: MOBILE RESPONSIVENESS */
-        @media screen and (max-width: 767px) {
-            nav {
-                flex-direction: column;
-                gap: 17px;
-                padding: 20px;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 12px;
-            }
-
-            .hero {
-                min-height: 430px;
-                padding: 55px 20px;
-            }
-
-            .hero h1 {
-                font-size: 34px;
-            }
-
-            .hero p {
-                font-size: 14px;
-            }
-
-            .services {
-                padding: 55px 6%;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 17px;
-            }
-
-            .service-card {
-                padding: 24px;
-            }
-
-            .team-section {
-                padding-top: 55px;
-                padding-bottom: 55px;
-            }
-
-            .team-photo {
-                height: 260px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            nav {
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .nav-links {
-                gap: 16px;
-            }
-
-            .team-photo {
-                height: 190px;
-            }
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- TASK 1: NAVIGATION -->
-    <nav>
-        <a href="#home" class="logo">Tech<span>Nova</span></a>
+    <!-- Navbar -->
+    <nav class="m-5 rounded-2xl bg-slate-900 p-5 text-white shadow-xl">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4">
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#contact" class="contact-link">Contact Us</a></li>
-        </ul>
+            <a href="#" class="text-2xl font-bold text-cyan-400">
+                Muneeb<span class="text-white">Website</span>
+            </a>
+
+            <div class="flex flex-wrap items-center gap-5">
+                <a href="#home" class="hover:text-cyan-400">Home</a>
+                <a href="#services" class="hover:text-cyan-400">Services</a>
+                <a href="#about" class="hover:text-cyan-400">About</a>
+                <a href="#contact" class="hover:text-cyan-400">Contact</a>
+            </div>
+
+            <a href="#contact"
+               class="rounded-lg bg-cyan-500 px-5 py-2 font-semibold text-slate-950 hover:bg-cyan-300">
+                Get Started
+            </a>
+
+        </div>
     </nav>
 
-    <!-- TASK 1: HERO -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="hero-label">Technology • Innovation • Growth</span>
+    <!-- Hero Section -->
+    <header id="home" class="m-5 rounded-3xl bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-900 p-8 text-white md:m-6 md:p-16">
 
-            <h1>
-                Building Digital Solutions<br>
-                <span>for a Smarter Future</span>
-            </h1>
+        <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
 
-            <p>
-                We create modern software, intelligent AI solutions,
-                secure digital systems, and scalable cloud services
-                to solve real-world problems.
-            </p>
-
-            <a href="#services" class="primary-btn">
-                Explore Our Services
-                <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- TASK 2: SERVICES GRID -->
-    <section class="services" id="services">
-        <div class="section-heading">
-            <span class="eyebrow">Our Expertise</span>
-            <h2>Services We Provide</h2>
-            <p>
-                Practical technology solutions designed to improve
-                performance, security, and digital experiences.
-            </p>
-        </div>
-
-        <div class="services-grid">
-
-            <article class="service-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-cloud"></i>
-                </div>
-                <h3>Cloud Computing</h3>
-                <p>
-                    Scalable infrastructure, cloud storage, and
-                    reliable services that help applications
-                    remain accessible and efficient.
+            <div>
+                <p class="mb-4 inline-block rounded-full bg-cyan-400/15 px-4 py-2 text-sm font-semibold text-cyan-300">
+                    MODERN WEB DEVELOPMENT
                 </p>
-            </article>
 
-            <article class="service-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
-                <h3>Mobile App Development</h3>
-                <p>
-                    User-friendly Android and iOS applications
-                    built around responsive interfaces,
-                    usability, and performance.
+                <h1 class="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
+                    Build Beautiful
+                    <span class="text-cyan-400">Websites</span>
+                    Faster.
+                </h1>
+
+                <p class="mb-8 max-w-xl text-lg leading-8 text-slate-300">
+                    Create responsive, modern, and professional websites
+                    with Tailwind CSS utility classes. Design faster and
+                    turn your ideas into reality.
                 </p>
-            </article>
 
-            <article class="service-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-brain"></i>
-                </div>
-                <h3>Artificial Intelligence</h3>
-                <p>
-                    Machine learning, predictive analytics, and
-                    intelligent automation for data-driven
-                    decisions and smarter applications.
-                </p>
-            </article>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services"
+                       class="rounded-xl bg-cyan-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-300">
+                        Explore Services →
+                    </a>
 
-            <article class="service-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <h3>Cybersecurity & Data Engineering</h3>
-                <p>
-                    Data processing, secure system design,
-                    and reliable data pipelines to support
-                    protected digital operations.
-                </p>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- TASK 4: BOOTSTRAP TEAM -->
-    <section class="container team-section" id="team">
-
-        <div class="section-heading">
-            <span class="eyebrow">The People Behind the Work</span>
-            <h2>Meet Our Team</h2>
-            <p>
-                A team bringing together software development,
-                design, and artificial intelligence.
-            </p>
-        </div>
-
-        <!-- Bootstrap 12-column grid -->
-        <div class="row g-4">
-
-            <!-- YOUR PROFILE -->
-            <div class="col-12 col-md-4">
-                <div class="card team-card shadow-sm text-center p-3">
-
-                    <img
-                        src="img.png"
-                        class="team-photo"
-                        alt="Muneeb Farid, CEO and AI engineer"
-                    >
-
-                    <div class="card-body">
-                        <h3 class="card-title">Muneeb Farid</h3>
-                        <p class="team-role">CEO & AI Engineer</p>
-
-                        <p class="card-text">
-                            Interested in artificial intelligence,
-                            machine learning, and software development.
-                            Focused on building practical applications
-                            that solve real-world problems.
-                        </p>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/"
-                           aria-label="LinkedIn profile">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/"
-                           aria-label="GitHub profile">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-
+                    <a href="#about"
+                       class="rounded-xl border border-white/30 px-6 py-3 font-bold transition hover:bg-white hover:text-slate-900">
+                        Learn More
+                    </a>
                 </div>
             </div>
 
-            <!-- TEAM MEMBER 2 -->
-            <div class="col-12 col-md-4">
-                <div class="card team-card shadow-sm text-center p-3">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85"
-                        class="team-photo"
-                        alt="Portrait representing the UI and UX designer"
-                        loading="lazy"
-                    >
-
-                    <div class="card-body">
-                        <h3 class="card-title">Sara Khan</h3>
-                        <p class="team-role">UI/UX Designer</p>
-
-                        <p class="card-text">
-                            Focuses on clean interfaces, visual
-                            consistency, and accessible user
-                            experiences across digital products.
-                        </p>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/"
-                           aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://dribbble.com/"
-                           aria-label="Design portfolio">
-                            <i class="fa-brands fa-dribbble"></i>
-                        </a>
-                    </div>
-
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur">
+                <div class="mb-5 flex gap-2">
+                    <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-green-400"></span>
                 </div>
-            </div>
 
-            <!-- TEAM MEMBER 3 -->
-            <div class="col-12 col-md-4">
-                <div class="card team-card shadow-sm text-center p-3">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=85"
-                        class="team-photo"
-                        alt="Portrait representing the web developer"
-                        loading="lazy"
-                    >
-
-                    <div class="card-body">
-                        <h3 class="card-title">Usman Malik</h3>
-                        <p class="team-role">Web Developer</p>
-
-                        <p class="card-text">
-                            Develops responsive websites and
-                            maintainable web applications using
-                            modern front-end and back-end technologies.
-                        </p>
+                <div class="rounded-xl bg-slate-950 p-6">
+                    <p class="mb-3 text-sm text-cyan-400">// Your next big idea</p>
+                    <p class="text-2xl font-bold text-white">
+                        Design. Develop. Deploy.
+                    </p>
+                    <div class="my-5 h-1 w-24 rounded bg-cyan-400"></div>
+                    <p class="leading-7 text-slate-400">
+                        Responsive layouts, beautiful components,
+                        and clean user interfaces.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="rounded-md bg-blue-500/20 px-3 py-2 text-sm text-blue-300">HTML</span>
+                        <span class="rounded-md bg-cyan-500/20 px-3 py-2 text-sm text-cyan-300">Tailwind CSS</span>
+                        <span class="rounded-md bg-purple-500/20 px-3 py-2 text-sm text-purple-300">JavaScript</span>
                     </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/"
-                           aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/"
-                           aria-label="GitHub">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
         </div>
+    </header>
+
+    <!-- Statistics -->
+    <section class="m-5 grid grid-cols-1 gap-4 sm:grid-cols-3 md:m-6">
+
+        <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+            <h2 class="text-4xl font-extrabold text-blue-600">100%</h2>
+            <p class="mt-2 text-slate-500">Responsive Design</p>
+        </div>
+
+        <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+            <h2 class="text-4xl font-extrabold text-cyan-600">Fast</h2>
+            <p class="mt-2 text-slate-500">Development Workflow</p>
+        </div>
+
+        <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+            <h2 class="text-4xl font-extrabold text-indigo-600">Modern</h2>
+            <p class="mt-2 text-slate-500">User Experience</p>
+        </div>
+
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <h2>Let's Build Something Meaningful</h2>
-        <p>
-            Have a project idea? Let's explore how technology
-            can help turn it into reality.
+    <!-- Services -->
+    <section id="services" class="m-5 rounded-3xl bg-white p-8 shadow-sm md:m-6 md:p-12">
+
+        <div class="mb-10 text-center">
+            <p class="mb-3 font-bold uppercase tracking-widest text-cyan-600">
+                What We Offer
+            </p>
+
+            <h2 class="mb-4 text-3xl font-extrabold md:text-4xl">
+                Our Services
+            </h2>
+
+            <p class="mx-auto max-w-2xl leading-7 text-slate-500">
+                Everything you need to create a strong and professional
+                online presence.
+            </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+
+            <!-- Card 1 -->
+            <article class="rounded-2xl border border-slate-200 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-100 text-3xl">
+                    🎨
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">UI/UX Design</h3>
+
+                <p class="mb-5 leading-7 text-slate-500">
+                    Design clean, attractive, and user-friendly interfaces
+                    for websites and applications.
+                </p>
+
+                <a href="#contact" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Learn More →
+                </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="rounded-2xl border border-slate-200 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-100 text-3xl">
+                    💻
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">Web Development</h3>
+
+                <p class="mb-5 leading-7 text-slate-500">
+                    Build responsive websites using HTML, CSS, JavaScript,
+                    and Tailwind CSS.
+                </p>
+
+                <a href="#contact" class="font-semibold text-cyan-700 hover:text-cyan-900">
+                    Learn More →
+                </a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="rounded-2xl border border-slate-200 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-purple-100 text-3xl">
+                    🚀
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">Performance</h3>
+
+                <p class="mb-5 leading-7 text-slate-500">
+                    Create efficient layouts with responsive utilities
+                    and reusable design patterns.
+                </p>
+
+                <a href="#contact" class="font-semibold text-purple-600 hover:text-purple-800">
+                    Learn More →
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="m-5 rounded-3xl bg-cyan-50 p-8 md:m-6 md:p-12">
+
+        <div class="mx-auto max-w-4xl text-center">
+            <h2 class="mb-5 text-3xl font-extrabold md:text-4xl">
+                Why Choose Tailwind CSS?
+            </h2>
+
+            <p class="mb-8 leading-8 text-slate-600">
+                Tailwind CSS lets you style elements directly in your HTML
+                using utility classes. You can control spacing, typography,
+                colors, borders, layouts, and responsive behavior without
+                creating a separate CSS rule for every component.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="rounded-full bg-white px-5 py-3 font-semibold shadow-sm">✓ Utility Classes</span>
+                <span class="rounded-full bg-white px-5 py-3 font-semibold shadow-sm">✓ Responsive Design</span>
+                <span class="rounded-full bg-white px-5 py-3 font-semibold shadow-sm">✓ Flexible Layouts</span>
+                <span class="rounded-full bg-white px-5 py-3 font-semibold shadow-sm">✓ Fast Styling</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="m-5 rounded-3xl bg-slate-900 p-8 text-center text-white md:m-6 md:p-12">
+
+        <h2 class="mb-4 text-3xl font-extrabold md:text-4xl">
+            Ready to Build Something Great?
+        </h2>
+
+        <p class="mb-8 text-slate-300">
+            Start practicing Tailwind CSS and create your own modern website.
         </p>
-        <a href="mailto:YOUR-EMAIL@example.com" class="primary-btn">
-            Get in Touch
-            <i class="fa-solid fa-envelope ms-2"></i>
+
+        <a href="https://tailwindcss.com/docs"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-block rounded-xl bg-cyan-400 px-8 py-3 font-bold text-slate-950 transition hover:bg-cyan-200">
+            Explore Tailwind Docs
         </a>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p class="mb-1">
-            <strong>TechNova</strong> | Technology & Digital Innovation
+    <!-- Footer -->
+    <footer class="m-5 rounded-2xl bg-white p-6 text-center text-slate-500 shadow-sm md:m-6">
+        <p>
+            © 2026 TailwindUI Practice Page. Built with Tailwind CSS.
         </p>
-        <p class="mb-0">
-            &copy; 2026 TechNova. All rights reserved.
+        <p class="mt-2 text-sm">
+            Learn • Practice • Create
         </p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
